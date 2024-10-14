@@ -1,0 +1,28 @@
+.radio-container {
+  padding: 30px; /* Increased padding for a more spacious look */
+  max-width: 800px; /* Limit max width for better readability */
+  margin: 0 auto; /* Center the container */
+  background-color: #f8f8f8; /* Light background for contrast */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.radio-container h2 {
+  color: #a82d49; /* Dark red for headings */
+  font-size: 2.5rem; /* Increased font size */
+  margin-bottom: 15px; /* Space below the heading */
+}
+
+.radio-container p {
+  color: #333; /* Dark grey for text */
+  font-size: 1.3rem; /* Increased font size for paragraphs */
+  line-height: 1.8; /* Improve line spacing */
+  margin-bottom: 20px; /* Space below paragraphs */
+}
+
+.radio-container ul {
+  color: #333; /* Dark grey for list items */
+  font-size: 1.2rem; /* Font size for list items */
+  margin-left: 20px; /* Indent list items */
+  line-height: 2rem;
+}

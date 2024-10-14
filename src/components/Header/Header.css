@@ -1,0 +1,147 @@
+/* Header styling */
+header {
+  background-color: #a82d49;
+  padding: 1rem;
+  color: #333;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+/* Navigation styling */
+nav {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically on mobile */
+  align-items: flex-start; /* Align items to the start */
+  width: 100%; /* Ensure nav takes full width */
+}
+
+/* Logo container styles */
+.logo-container {
+  margin-top: 10px; /* Space between logo and menu */
+}
+
+.logo {
+  max-width: 150px;
+}
+
+/* Navigation menu styling */
+nav ul {
+  display: none; /* Hide menu links on mobile by default */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-direction: column; /* Stack menu items vertically */
+  align-items: center; /* Center menu items */
+}
+
+/* Show the menu when toggled on */
+nav.active ul {
+  display: flex; /* Show menu links when active */
+}
+
+nav ul.show {
+  display: flex; /* Show menu links when toggled on */
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+nav ul li {
+  margin: 10px 0; /* Margin between menu items */
+  font-size: 18px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Hamburger (menu icon) styling */
+.hamburger {
+  display: none; /* Hide hamburger by default */
+  flex-direction: column;
+  cursor: pointer;
+  align-items: flex-start; 
+  font-size: 2rem;
+  position: absolute;
+  top: 1rem;
+  left: 2.5rem;
+  z-index: 20;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: all 0.3s ease; /* Add smooth transition */
+}
+
+/* Close (X) icon styling */
+.close {
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  line-height: 1.2;
+  transition: all 0.3s ease;
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stack nav items on mobile */
+  }
+
+  .hamburger {
+    display: flex; /* Show hamburger only on mobile */
+  }
+
+  nav ul {
+    display: none; /* Keep hidden by default on mobile */
+  }
+
+  nav.active ul {
+    display: flex; /* Show menu links when active */
+    flex-direction: column; /* Stack menu items vertically */
+    align-items: center; /* Center menu items vertically */
+    /* width: 100%;
+    justify-content: center;
+    align-items: center; */
+    margin-top: 20px;
+  }
+}
+
+/* For larger screens (above 768px) */
+@media (min-width: 769px) {
+  nav {
+    flex-direction: row; /* Keep nav items in a row */
+    justify-content: space-between; /* Space out logo and menu */
+    align-items: center; /* Center items vertically */
+  }
+
+  nav ul {
+    display: flex; /* Show menu links on larger screens */
+    flex-direction: row; /* Display links in a row */
+    align-items: center; /* Center menu items vertically */
+  }
+
+  .hamburger {
+    display: none; /* Hide hamburger on larger screens */
+  }
+}

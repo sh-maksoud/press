@@ -1,0 +1,53 @@
+.team-container {
+  padding: 30px;
+  text-align: center;
+  max-width: 800px; /* Limit max width for better readability */
+  margin: 0 auto; /* Center the container */
+  background-color: #f8f8f8; /* Light background for contrast */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.team-container h2 {
+  color: #333;
+}
+
+.team-container p {
+  color: #666;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Ensure consistent sizing for team members */
+.team-member {
+  margin: 20px;
+  text-align: center;
+  max-width: 200px;
+  flex: 1 1 200px; /* Allow flex items to grow/shrink */
+  min-width: 150px; /* Minimum width for smaller screens */
+}
+
+.member-image {
+  width: 100px; /* Set a consistent width */
+  height: 100px; /* Set a consistent height */
+  border-radius: 50%; /* Round shape for images */
+  object-fit: cover; /* Ensure images cover the container */
+  margin-bottom: 10px; /* Space between image and text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .team-member {
+    max-width: 150px; /* Reduce max width on smaller screens */
+    flex: 1 1 150px; /* Adjust flex basis for responsiveness */
+  }
+
+  .member-image {
+    width: 80px; /* Smaller size for images on smaller screens */
+    height: 80px; /* Smaller size for images on smaller screens */
+  }
+}
