@@ -35,9 +35,9 @@ const Team = () => {
     },
     {
       name: "محمد أحمد",
-      role: "محررة أخبار",
+      role: "محرر أخبار",
       image: "/images/news_editor.jpg",
-      description: "تكتب المقالات الإخبارية وتحرر المحتوى.",
+      description: "يكتب المقالات الإخبارية ويحرر المحتوى.",
     },
   ];
 

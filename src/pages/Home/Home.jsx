@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import './Home.css';
 import SchoolRadio from '/images/School-Radio.jpeg';
 
-
 const Home = () => {
   return (
     <div className="home-container">
@@ -40,6 +39,12 @@ const Home = () => {
           <Link to="/videos" className="rotating-card">
             <h2>فيديوهات</h2>
             <p className='description'>استعرض الفيديوهات التعليمية والمشاركات الخاصة بالإذاعة والصحافة المدرسية.</p>
+          </Link>
+
+          {/* New Team Card */}
+          <Link to="/team" className="rotating-card">
+            <h2>الفريق</h2>
+            <p className='description'>تعرف على أعضاء الفريق الذين يعملون بجد لتقديم محتوى إذاعي وصحفي مميز.</p>
           </Link>
         </div>
       </div>
