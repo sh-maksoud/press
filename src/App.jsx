@@ -8,6 +8,7 @@ import Competitions from './pages/Competitions/Competitions';
 import Interviews from './pages/Interviews/Interviews';
 import Videos from './pages/Videos/Videos';
 import Team from './pages/Team/Team';
+import GoToTop from './components/GoToTop/GoToTop';
 
 function App() {
   return (
@@ -21,8 +22,9 @@ function App() {
           <Route path="/competitions" element={<Competitions />} />
           <Route path="/interviews" element={<Interviews />} />
           <Route path="/videos" element={<Videos />} />
-          <Route path="/team" element={<Team />} /> {/* Updated this line */}
+          <Route path="/team" element={<Team />} />
         </Routes>
+        <GoToTop /> 
       </main>
       <Footer />
     </Router>
